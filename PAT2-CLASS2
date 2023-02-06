@@ -1,0 +1,21 @@
+n = int(input("Enter number of elements: "))
+lst_of_num = [int(input("Enter element: ")) for i in range(n)]
+odd, even = 0, 0
+odd_pos, even_pos = [], []
+
+for i, num in enumerate(lst_of_num):
+    if num % 2 == 0 and i % 2 == 0:
+        lst_of_num[i] = "even"
+        even += 1
+        even_pos.append(i)
+    elif num % 2 == 1 and i % 2 == 1:
+        lst_of_num[i] = "odd"
+        odd += 1
+        odd_pos.append(i)
+
+print("List of numbers:", lst_of_num)
+print("Odd count:", odd)
+print("Odd positions:", odd_pos)
+print("Even count:", even)
+print("Even positions:", even_pos)
+#SHIVANSH SRIVASTAVA 22BRS1137
