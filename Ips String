@@ -1,0 +1,15 @@
+print("SHIVANSH SRIVASTAVA-22BRS1137")
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+s2 = s2[::-1]
+result = ""
+
+for i in range(max(len(s1), len(s2))):
+    if i < len(s1):
+        result += s1[i]
+    if i < len(s2):
+        result += s2[i]
+
+print(result)
+#SHIVANSH SRIVASTAVA
+#22BRS1137
