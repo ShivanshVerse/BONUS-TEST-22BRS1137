@@ -1,0 +1,16 @@
+def rotate_word():
+    string = input("Enter the string: ").upper()
+    alpha = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M','N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    shift = int(input("Enter the shift value: "))
+    rotated_string = ""
+    for char in string:
+        index = alpha.index(char)
+        rotated_string += alpha[(index + shift) % 26]
+    print("Rotated string:", rotated_string)
+    vowels = ['A','E','I','O','U']
+    if rotated_string[0] in vowels and rotated_string[-1] in vowels:
+        print("Happy Cool String")
+    else:  
+        print("Happy Hot String")
+
+rotate_word()
