@@ -1,0 +1,15 @@
+n = int(input("Enter the number of items in the dictionary: "))
+
+d = {}
+
+for i in range(n):
+    key = input("Enter the key: ")
+    value = input("Enter the value: ")
+    d[key] = value
+
+search = input("Enter the key to search: ")
+
+if search in d:
+    print("Key exists")
+else:
+    print("Key does not exist")
