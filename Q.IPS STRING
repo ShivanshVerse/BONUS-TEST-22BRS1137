@@ -1,0 +1,12 @@
+
+#SHIVANSH SRIVASTAVA
+#22BRS1137
+
+s = input("Enter a string: ")
+
+if s.lower() == s.lower()[::-1]:
+    print("Length:", len(s))
+    print("Palindrome")
+else:
+    print("Length:", len(s))
+    print("Not palindrome")
