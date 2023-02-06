@@ -1,0 +1,12 @@
+import datetime
+
+date_input = input("Enter the date: ")
+try:
+    date_format = "%Y-%b-%d"
+    date_obj = datetime.datetime.strptime(date_input, date_format)
+    print("Correct format")
+except ValueError:
+    date_format = "%d-%b-%Y"
+    date_obj = datetime.datetime.strptime(date_input, date_format)
+    new_format = date_obj.strftime("%Y-%b-%d")
+    print(f"Format corrected: {new_format}")
